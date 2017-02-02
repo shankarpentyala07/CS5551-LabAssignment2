@@ -1,0 +1,26 @@
+
+<meta charset="UTF-8">
+<title>directions</title>
+<!DOCTYPE html>
+<html lang="en" ng-app="gdirection">
+<head>
+    <script src ="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWhSE1HAi753_M8rcFTfcbBXUQInf8y6c&v=3.exp&sensor=true"></script>
+    <script src="../JSFiles/Homejs.js"></script>
+    <style>
+        #mapdirection{
+            height: 500px;
+            width:100%;
+
+        }
+    </style>
+</head>
+<body ng-controller="startend"  >
+<label>start point</label><input type ='text' ng-model="start" id="startpoint">
+<label>end point</label><input type ='text' ng-model="end" id="endpoint">
+<input type ='submit' value="Get Direction" ng-click="calcRoute()"><br><br>
+<div id ='mapdirection'></div>
+
+</body>
+</html>
+
